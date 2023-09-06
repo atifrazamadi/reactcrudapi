@@ -1,0 +1,30 @@
+.navbar {
+  position: relative; /* Make the navbar a positioning context */
+  display: flex; /* Align items horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.color-palette {
+  position: absolute; /* Position absolutely within the navbar */
+  top: 50%; /* Vertically center the circular palette */
+  right: 150px; /* Position it on the right side */
+  transform: translateY(-50%) rotate(-90deg); /* Center and rotate */
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+ 
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgb(151, 50, 50); 
+  border-radius: 100%;
+  margin: 5px;
+  cursor: pointer;
+}
